@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import './font/stylesheet.css';
+import './font/style.css';
 import './App.css';
 
 import {
@@ -9,13 +9,17 @@ import {
 } from 'react-router-dom';
 
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Router>

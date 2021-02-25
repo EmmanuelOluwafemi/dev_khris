@@ -46,7 +46,7 @@ const Header = () => {
     return (
         <HeaderStyle>
             <Link to="/" className="logo">Adolphus Chris.</Link>
-            <div onClick={handleToggler} className="menu-container it-hover">
+            <div onClick={handleToggler} className="menu-container it-hover hoverAnimation">
                 <div className="menu"></div>
             </div>
 
@@ -59,19 +59,19 @@ const Header = () => {
                     <div className="row">
                         <div className="col-6 social">
                             <p>Socials:</p>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">Linkedin</Link>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">Dribbble</Link>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">Twitter</Link>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">Medium</Link>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">ADPList</Link>
-                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new">Youtube</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">Linkedin</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">Dribbble</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">Twitter</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">Medium</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">ADPList</Link>
+                            <Link onMouseOver={handleSocialOver} onMouseLeave={handleSocialLeave} className="it-hover-new hoverAnimation">Youtube</Link>
                             {onSocial && <Cursor />}
                         </div>
                         <div className="col-6 links">
                             <p>Quick Links:</p>
-                            <Link onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new">My Works</Link>
-                            <Link onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new">About Me</Link>
-                            <Link onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new">Contact Me</Link>
+                            <Link onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new hoverAnimation">My Works</Link>
+                            <Link onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new hoverAnimation">About Me</Link>
+                            <Link to="/contact" onMouseOver={handleLinksOver} onMouseLeave={handleLinksLeave} className="it-hover-new hoverAnimation">Contact Me</Link>
                             {onLinks && <Cursor />}
                         </div>
 
@@ -98,7 +98,7 @@ const HeaderStyle = Styled.div`
     justify-content: space-between;
 
     .logo {
-        font-family: 'TT Norms Pro', sans-serif;
+        font-family: 'TT Norms Pro Medium', sans-serif;
         font-weight: 500;
         font-size: 1rem;
         line-height: 24px;
@@ -217,6 +217,7 @@ const HeaderStyle = Styled.div`
                         line-height: 48px;
                         color: #161927;
                         margin-bottom: 2rem;
+                        
 
                         @media (max-width: 768px) {
                             font-size: 1.4rem;

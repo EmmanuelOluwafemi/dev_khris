@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Styled from 'styled-components';
 
-const Cursor = () => {
+const Cursor = ({isWhite}) => {
     const [cursorX, setCursorX] = useState();
     const [cursorY, setCursorY] = useState();
 
     window.addEventListener('mousemove', (e) => {
-        setCursorX(e.pageX);
-        setCursorY(e.pageY);
+        setCursorX(e.clientX);
+        setCursorY(e.clientY);
     })
 
     return (
-        <CursorStyle className="cursor-new" style= {{
+        <CursorStyle className={isWhite ? "cursor-new isWhite" : "cursor-new"} style= {{
             left: cursorX + 'px',
             top: cursorY + 'px'
         }}> </CursorStyle>
@@ -31,6 +31,10 @@ const CursorStyle = Styled.div`
     left: 0;
     pointer-events: none;
     transition: all .05s ease;
+
+    &.isWhite {
+        background: #fff;
+    }
 
     @media (max-width: 768px) {
         display: none;

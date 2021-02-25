@@ -62,6 +62,7 @@ const HeroContent = Styled.div`
         p {
             margin: 0;
             font-size: 0.75rem;
+            font-family: 'TT Norms Pro Regular', sans-serif;
             font-weight: 400;
             line-height: 0;
             margin-left: 8px;
@@ -83,10 +84,12 @@ const HeroContent = Styled.div`
 
         p {
             font-size: 1rem;
+            font-family: 'TT Norms Pro Regular', sans-serif;
             font-weight: 400;
             color: #233A54;
 
             span {
+                font-family: 'TT Norms Pro Bold', sans-serif;
                 font-weight: 700;
                 color: #1346B1;
             }
@@ -98,6 +101,7 @@ const HeroContent = Styled.div`
 
         h6 {
             font-size: 2rem;
+            font-family: 'TT Norms Pro Medium', sans-serif;
             font-weight: 500;
             color: #233A54;
 
@@ -134,8 +138,9 @@ const HeroContent = Styled.div`
 
         a {
             font-size: 1.5rem;
-            margin-left: 1.5rem;
+            font-family: 'TT Norms Pro Regular', sans-serif;
             font-weight: 400;
+            margin-left: 1.5rem;
             margin-bottom: 1rem;
         }
 

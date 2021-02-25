@@ -12,8 +12,12 @@ body {
 }
 
 .it-hover:hover ~ .cursor-new {
-  transform: scale(6);
+  transform: translate(-50%, -50%) scale(6);
   mix-blend-mode: difference;
+  background: #fff;
+}
+
+.it-hover-black-new:hover ~ .cursor-new {
   background: #fff;
 }
 
@@ -22,4 +26,22 @@ body {
   mix-blend-mode: difference;
   background: #fff;
   z-index: 7;
+}
+
+.it-hover-select:hover ~ .cursor-new {
+  transform: scale(9);
+  mix-blend-mode: difference;
+  background: #fff;
+  z-index: 7;
+}
+
+.it-hover-black:hover ~ .cursor-new {
+  transform: scale(6);
+  mix-blend-mode: difference;
+  background: #fff;
+  z-index: 7;
+}
+
+.hoverAnimation {
+  position: relative;
 }
